@@ -1,0 +1,127 @@
+---
+title: 'Preporuke | One on One Fitnes Centar'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'reviews/'
+eleventyNavigation:
+    key: Reviews
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/reviews.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Preporuke</h1>
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/Galerija16.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/Galerija16.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/Galerija16.jpg" alt="new home" width="2500" height="1667" loading="eager">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews">
+        <div class="container">
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/Preporuke_Bajuti_Zeljka.jpg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Za mene, Damir Perkov je doista izvandredan trener. Njegovo znanje, iskustvo, profesionalan pristup i općenito pozitivna energija koju unosi u svaki trening čine ga izvanrednim ako ne i najboljim izborom za osobnog trenera. Rad sa Damirom omogućio mi je da u iznimno kratkom roku zavolim treninge, promijenim određene prehrambene navike te ostvarim vidljive i odlične rezultate. Svaki trening je stručno koncipiran i u potpunosti prilagođen mom stupnju i mogućnostima, a opet izazovan i izrazito funkcionalan te se na kraju svakog treninga osjećam zadovoljnije sobom što je možda i najvažnije.
+                </p>
+                <div class="star-group">
+                    <span class="name">Željka Bajuti<span class="desc">zadovoljna klijentica</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/Preporuke_Gacina_Andrej.jpg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Nisam dugo radio s Damirom, (jer nisam često u Hrvatskoj) ali taj kratki period što sam trenirajući proveo s njim uvelike mi je pomogao. Nesebično mi je otkrio kako se neke vježbe točno izvode, kako izolirati pojedini misić, a to sam osjetio odmah čim sam izvodio vježbu jer odjednom nisam mogao dizati težine koje sam inače dizao. Ne zato sto sam preko noći oslabio,nego jer je taj njegov, Damirov način izvedbe vježbe, točno pogodio misić i osjećao sam da se misić, i s manjim težinama, puno ranije nego inače umara. A to može značiti samo jedno, da sam dosad izvodio vježbe nedovoljno dobro tehnički, a sigurno su zbog toga i željeni rezultati izostali.
+                </p>
+                <div class="star-group">
+                    <span class="name">Andrej Gaćina<span class="desc">stolnotenisač hrvatske reprezentacije</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/Preporuke_Herceg_Ivana.jpg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Za Damira mogu reći da je, ne samo, fantastičan trener nego i vrhunski čovjek! Iako sam i sama profesionalni fitness trener moram priznati da mi je nakon poroda bilo teško da se ponovo vratim treningu. Damir je uspio da me motivira toliko da sam za četiri mjeseca treninga pod njegovim vodstvom završila na Svjetskom prvenstvu za fitness modela. Visoko plasirano peto mjesto najviše je njegova zasluga. Nije štedio znanje vezano za prehranu, metodiku, tehniku.
+                </p>
+                <div class="star-group">
+                    <span class="name">Ivana Herceg<span class="desc">osobna trenerica i fitness model</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/Preporuke_Krajancic_Andriana.jpg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Nakon puno vremena i godina koje sam provela u teretanama bez ikakvog nadzora i naravno bez ikakvog rezultata, upoznala sam Damira koji je u potpunosti izmijenio percepciju vježbanja i pravila prehrane. Osim što je vrhunski stručnjak, koji se definitivno prilagodio mojim sposobnostima nakon čega su rezultati naravno bili vidljivi, Damirova ljubav prema treniranju i pažnja koju posveti svakom treningu čine ga definitivno nezamjenjivim!
+                </p>
+                <div class="star-group">
+                    <span class="name">Andriana Krajančić<span class="desc">modna stilistica</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/Preporuke_Novak_Manuela.jpg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Vrhunski sportski trener, stručnjak, koji sa svojim inovatovnim metodama treninga radi totalne promjene u fizičkoj spremi! To kao i bivša natjecateljica u fitnessu i bodybuildingu vidim i na sebi! Primjenjujući njegov princip rada na sebi a i na klijentima koje ja treniram itekako vidim velike promjene! A psihološki pristup klijentima mu je super! Damir je definitivno moj najveći mentor i još puno od njega hoću naučiti! Hvala Damir!
+                </p>
+                <div class="star-group">
+                    <span class="name">Manuela Novak<span class="desc">osobna trenerica</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <!-- <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+                </p>
+                <div class="star-group">
+                    <span class="name">Brian A.<span class="desc">Homeowner</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

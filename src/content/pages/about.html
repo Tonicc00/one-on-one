@@ -1,0 +1,80 @@
+---
+title: 'O nama | One on One Fitnes Centar'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">O nama</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/Galerija16.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/Galerija16.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/Galerija16.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/trener02.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/trener02.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/trener02.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/damir-perkov.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/damir-perkov.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/damir-perkov.jpg" alt="house" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">Trener</span>
+                <h2 class="cs-title">Damir Perkov</h2>
+                <p class="cs-text">
+                    Damir Perkov rođen je 07. kolovoza 1970. u Zagrebu, a bodybuildingom se počeo baviti vrlo rano, sa svojih 16 godina (i 65 kilograma na 176 cm visine).
+                    S prvim ozbiljnijim treninzima počeo je 1990. godine u Domu Sportova u Zagrebu u poznatom body building klubu Metalac. Svoj prvi nastup imao je 1993. godine u Samoboru na 2. državnom prvenstvu Hrvatske, gdje osvaja 3. mjesto u kategoriji do 70 kilograma.
+                </p>
+                <p class="cs-text">
+                    Damir Perkov je ujedno i osobni kondicioni trener (specijalno za snagu, kondiciju i eksplozivnost) mnogim sportašima. Od poznatijih sportaša trenirao je: Mirka Filipovića, nogometaša Mislava Bradvića, dvostrukog svjetskog prvaka u tajlandskom boksu Emila Zoraja, stolnotenisačicu iz Japana Mitsuki Yoshidu koja je igrala za Mladost i Dr. Časl, te Luku Fučeca, juniorskog prvaka Hrvatske u stolnom tenisu.
+                </p>
+                <p class="cs-text">
+                    Autor je knjiga Bodybuilding: Sustavni trening, Bodybuilding - tehnika izvođenja vježbi i Prehrana u bodybuildingu.
+                </p>
+                <!-- <div class="cs-flex-group">
+                    <p class="cs-flex-p">
+                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+                    </p>
+                    <span class="cs-name">Justin Time</span>
+                    <span class="cs-job">CEO-Founder</span>
+                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+                </div> -->
+                <a href="/projects" class="cs-button-solid">Galerija</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

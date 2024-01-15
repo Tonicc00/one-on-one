@@ -1,0 +1,348 @@
+---
+title: 'One on One fitnes centar'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/landing.jpg'
+permalink: '/'
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="stylesheet" href="/assets/css/critical.css" />
+
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
+            window
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero">
+        <div class="cs-container">
+            <div class="cs-flex-group">
+                <!-- <span class="cs-topper">mountain hiking society</span> -->
+                <h1 class="cs-title">One on one fitness centar</h1>
+                <p class="cs-text">
+                    TRENINZI ISKLJUČIVO UZ NADZOR OSOBNOG TRENERA
+                </p>
+                <a href="/about" class="cs-button-solid">O nama</a>
+                <a href="/contact" class="cs-button-transparent">
+                    <img
+                    class="cs-img"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
+                    alt="play icon"
+                    width="17"
+                    height="17" />
+                    Kontakt info
+                </a>
+            </div>
+        </div>
+
+        <!-- Background Image -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/Galerija16.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/Galerija16.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/Galerija16.jpg" alt="new home" width="2500" height="1667" loading="eager">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services" class="services">
+        <!-- Get Icons From flaticon.com -->
+        <div class="card">
+            <picture>
+                <img
+                aria-hidden="true"
+                decoding="async"
+                src="/assets/images/o-nama.jpg"
+                alt="appliance"
+                width="48"
+                height="48" />
+            </picture>
+            <!-- <h2>Service 1</h2> -->
+            <p>One on One je personal training studio (studio za osobni trening) - što znači da radimo treninge isključivo s osobnim trenerom.</p>
+        </div>
+        <div class="card">
+            <picture>
+                <img
+                aria-hidden="true"
+                decoding="async"
+                src="/assets/images/o-nama2.jpg"
+                alt="appliance"
+                width="48"
+                height="48" />
+            </picture>
+            <!-- <h2>Service 2</h2> -->
+            <p>Namijenjen je onima koji ne vole gužve u teretanama i preferiraju vježbati u privatnosti uz nadzor osobnog trenera.</p>
+        </div>
+        <div class="card">
+            <picture>
+                <img
+                aria-hidden="true"
+                decoding="async"
+                src="/assets/images/o-nama3.jpg"
+                alt="appliance"
+                width="48"
+                height="48" />
+            </picture>
+            <!-- <h2>Service 3</h2> -->
+            <p>Istraživanja o učinku treniranja u teretani pokazuju da ljudi koji treniraju s osobnim trenerom brže postižu željene rezultate za razliku od onih koji vježbaju sami.</p>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/Galerija05.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/Galerija05.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/Galerija05.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/Galerija07.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/Galerija07.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/Galerija07.jpg" alt="house" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <!-- <span class="cs-topper">O nama</span> -->
+                <h2 class="cs-title">O nama</h2>
+                <p class="cs-text">
+                    Treninzi isključivo uz nadzor osobnog trenera u prethodno dogovorenim terminima. Naručite se za svoj termin na 098 776 032 ili na e-mail: info@fitness-1-on-1.com
+                </p>
+                <p class="cs-text">
+                    One on One je personal training studio (studio za osobni trening) - što znači da radimo treninge isključivo s osobnim trenerom.
+                </p>
+                <!-- <div class="cs-flex-group">
+                    <p class="cs-flex-p">
+                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
+                    </p>
+                    <span class="cs-name">Justin Time</span>
+                    <span class="cs-job">CEO-Founder</span>
+                    <img 
+                    class="cs-quote-icon"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
+                    alt="gavel"
+                    width="136"
+                    height="77" />
+                </div> -->
+                <a href="/about" class="cs-button-solid">Saznajte više</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--            Extra Content To Rank             -->
+    <!-- ============================================ -->
+
+    <section id="sbs-r">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/Galerija08.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/Galerija08.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/Galerija08.jpg" alt="house" loading="lazy" width="400" height="560">
+                </picture>
+                <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/Galerija02.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/Galerija02.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/Galerija02.jpg" alt="cabinets" loading="lazy" width="400" height="560">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <!-- <span class="cs-topper">SEO Ranking</span> -->
+                <h2 class="cs-title">Usluge</h2>
+                <p class="cs-text">
+                    Kreiramo programe treninga i prehrane, te pripremu kondicione spreme kod sportaša i rekreativaca.
+                </p>
+                <p class="cs-text">
+                    Prednost treniranja s osobnim trenerom je da je to najbrži, najlakši i najuspješniji način da poboljšate svoje zdravlje i budete u top formi.
+                </p>
+                <a href="/blog" class="cs-button-solid">Cjenik</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery">
+        <div class="cs-container">
+            <!-- <span class="cs-topper">Our Portfolio</span> -->
+            <h2 class="cs-title">Naš prostor</h2>
+            <div class="cs-image-group">
+                <!-- Row 1-->
+                <div class="cs-row cs-row-1">
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Galerija01.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Galerija01.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Galerija01.jpg" alt="new hallway" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Galerija02.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Galerija02.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Galerija02.jpg" alt="new home construction" loading="lazy" width="400" height="560">
+                    </picture>
+                    <!-- <picture class="cs-picture cs-picture3">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Galerija03.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Galerija03.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Galerija03.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
+                    </picture> -->
+                </div>
+                <!-- Row 2 -->
+                <div class="cs-row cs-row-2">
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Galerija05.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Galerija05.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Galerija05.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Galerija07.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Galerija07.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Galerija07.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
+                    </picture>
+                    <!-- <picture class="cs-picture cs-picture3">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Galerija11.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Galerija11.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Galerija11.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
+                    </picture> -->
+                </div>
+                <!-- Row 3 -->
+                <div class="cs-row cs-row-3">
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Galerija03.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Galerija03.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Galerija03.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="/assets/images/Galerija11.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/Galerija11.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/Galerija11.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
+                    </picture>
+                    <!-- <picture class="cs-picture cs-picture3">
+                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
+                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
+                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
+                    </picture> -->
+
+                </div>
+            </div>
+            <a href="/projects" class="cs-button-solid">Galerija</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Reviews                    -->
+    <!-- ============================================ -->
+
+    <section id="reviews">
+        <div class="cs-container">
+            <!-- <span class="cs-topper">Recenzije</span> -->
+            <h2 class="cs-title">Preporuke naših zadovoljnih klijenata</h2>
+            <p class="cs-text">
+                Najbolji dokaz kvalitete našeg rada su naši zadovoljni klijeniti. Zato vam s ponosom predstavljamo par recenzija kako bi dobili bolju sliku o načinu na koji pristupamo svakom pojedinačnom klijentu.
+            </p>
+            <ul class="cs-card-group">
+                <!-- Review 1 -->
+                <li class="cs-item">
+                    <img
+                    class="cs-item-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="/assets/images/Preporuke_Bajuti_Zeljka.jpg"
+                    alt="profile picture"
+                    width="80"
+                    height="80" />
+                    <p class="cs-item-p">
+                        Za mene, Damir Perkov je doista izvandredan trener. Njegovo znanje, iskustvo, profesionalan pristup i općenito pozitivna energija koju unosi u svaki trening čine ga izvanrednim ako ne i najboljim izborom za osobnog trenera. Rad sa Damirom omogućio mi je da u iznimno kratkom roku zavolim treninge, promijenim određene prehrambene navike te ostvarim vidljive i odlične rezultate. Svaki trening je stručno koncipiran i u potpunosti prilagođen mom stupnju i mogućnostima, a opet izazovan i izrazito funkcionalan te se na kraju svakog treninga osjećam zadovoljnije sobom što je možda i najvažnije.
+                    </p>
+                    <span class="cs-reviewer">
+                        Željka Bajuti
+                        <!-- <span class="cs-desc">Homeowner</span> -->
+                    </span>
+                    <!-- <img
+                    class="cs-item-stars"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+                    alt="stars"
+                    width="96"
+                    height="16" /> -->
+                </li>
+                <!-- Review 2 -->
+                <li class="cs-item">
+                    <img
+                    class="cs-item-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="/assets/images/Preporuke_Gacina_Andrej.jpg"
+                    alt="profile picture"
+                    width="80"
+                    height="80" />
+                    <p class="cs-item-p">
+                        Nisam dugo radio s Damirom, (jer nisam često u Hrvatskoj) ali taj kratki period što sam trenirajući proveo s njim uvelike mi je pomogao. Nesebično mi je otkrio kako se neke vježbe točno izvode, kako izolirati pojedini misić, a to sam osjetio odmah čim sam izvodio vježbu jer odjednom nisam mogao dizati težine koje sam inače dizao. Ne zato sto sam preko noći oslabio,nego jer je taj njegov, Damirov način izvedbe vježbe, točno pogodio misić i osjećao sam da se misić, i s manjim težinama, puno ranije nego inače umara. A to može značiti samo jedno, da sam dosad izvodio vježbe nedovoljno dobro tehnički, a sigurno su zbog toga i željeni rezultati izostali.
+                    </p>
+                    <span class="cs-reviewer">
+                        Andrej Gaćina,
+                        <span class="cs-desc">stolnotenisač hrvatske reprezentacije</span>
+                    </span>
+                    <!-- <img
+                    class="cs-item-stars"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+                    alt="stars"
+                    width="96"
+                    height="16" /> -->
+                </li>
+            </ul>
+            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Preporuke</a>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+{% endblock %}

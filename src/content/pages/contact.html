@@ -1,0 +1,98 @@
+---
+title: 'Kontakt | One on One Fitnes Centar'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'contact/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/contact.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Kontakt</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/Galerija16.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/Galerija16.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/Galerija16.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Contact Form                  -->
+    <!-- ============================================ -->
+
+    <section id="cs-contact">
+        <div class="cs-container">
+            <form id="cs-form" name="Contact Form" method="post">
+                <div class="cs-content">
+                    <!-- <span class="cs-topper">Contact</span> -->
+                    <h2 class="cs-title">Kontakt</h2>
+                    
+                <div class="cs-content">
+                    <!-- <span class="cs-topper">Contact</span> -->
+                    <p class="cs-text">
+                    </p>
+                    <p>Fitness Centar One on One</p>
+                    <p>Miramarska 13 A, 10 000 Zagreb</p>
+                    <p>Tel: 098/776-032</p>
+                    <p>E-mail: fitnesscentar1on1@gmail.com</p>
+                    <p>RADNO VRIJEME: po dogovoru</p>
+                </div>
+                    <p class="cs-text" style="margin: 1rem 0">
+                    <span class="cs-topper">PARKIRANJE:</span>
+                        Parking ispred zgrade - 2. zona
+                        Privatni parking iza autopraone na miramarskoj cesti - 5kn/sat
+                        Besplatni parking se nalazi niz Koturašku ulicu, prema miramarskom podvožnjaku.
+                    </p>
+                    <p style="margin-bottom: 1rem;">
+                    <span class="cs-topper">JAVNI PRIJEVOZ:</span>
+                    
+                        <p>Tramvajske linije koje voze do glavnog kolodovora:</p>
+                        <p>- 2: ČRNOMEREC - SAVIŠĆE</p>
+                        <p>- 4: SAVSKI MOST - DUBEC</p>
+                        <p>- 6: ČRNOMEREC - SOPOT</p>
+                        <p>- 9: LJUBLJANICA - BORONGAJ</p>
+                        <p>- 13: ŽITNJAK - KVATERNIKOV TRG</p>
+                        <p>Tramvajske linije koje voze do stanice Miramarska:</p>
+                        <p>- 5: PREČKO - MAKSIMIR</p>
+                        <p>- 3: LJUBLJANICA - SAVIŠĆE</p>
+                        <p>- 13: ŽITNJAK - KVATERNIKOV TRG</p>
+                    </p>
+                </div>
+                <!-- <label>
+                    Name
+                    <input required type="text" id="name" name="name" placeholder="Name">
+                </label>
+                <label>
+                    Email
+                    <input required type="text" id="email" name="email" placeholder="Email">
+                </label>
+                <label>
+                    Phone
+                    <input required type="text" id="phone" name="phone" placeholder="Phone">
+                </label>
+                <label>
+                    How Did You Find Us
+                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
+                </label>
+                <label class="cs-label-message">
+                    Message
+                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+                </label>
+                <button class="cs-button-solid" type="submit">Submit Message</button> -->
+
+            </form>
+            
+            <iframe style="max-height: 100%; width: 100%; margin-top: 1rem; margin-right: 1rem;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.405540290181!2d15.97340677629257!3d45.803135971081595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6f707ffafc5%3A0xb6071d0fb1c91657!2sMiramarska%20Cesta%2013A%2C%2010000%2C%20Zagreb%2C%20Hrvatska!5e0!3m2!1shr!2sus!4v1705101446624!5m2!1shr!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+{% endblock %}
