@@ -275,9 +275,11 @@
             }
 
             picture {
-                width: calc(88 / 16 * 1em);
-                height: calc(88 / 16 * 1em);
-                margin: auto;
+                // width: calc(88 / 16 * 1em);
+                // height: calc(88 / 16 * 1em);
+                max-width:1050px;
+                max-height: 800px;
+                margin: 0 10px 0 0;
                 margin-bottom: calc(23 / 16 * 1em);
                 background: var(--primary);
                 border-radius: 50%;
@@ -286,8 +288,10 @@
                 align-items: center;
 
                 img {
-                    width: calc(48 / 16 * 1em);
-                    height: calc(48 / 16 * 1em);
+                    // width: calc(48 / 16 * 1em);
+                    // height: calc(48 / 16 * 1em);
+                    width: 100%;
+                    height: 100%;
                 }
             }
             h2 {
